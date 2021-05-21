@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import SearchBar from "./components/SearchBar";
+import {Container} from '@material-ui/core';
+import Header from "./components/Header";
+import { useState } from "react";
+import Skeleton from "./components/SkeletonContent";
+
+// API ENDPOINT
+// https://api.lyrics.ovh/v1/TWICE/Dance the night away
+
 
 function App() {
+
+  const [inputQuery, setInputQuery] = useState('');
+
+  const handleChange = event => {
+    setInputQuery(event.target.value);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container maxWidth="sm" style={{backgroundColor:'#F3F3F3'}}>
+        <Header />
+        <SearchBar handleChange={handleChange}/>
+        {inputQuery === '' ? <Skeleton /> : <h1>{inputQuery}</h1>}
+      </Container>
     </div>
   );
 }
