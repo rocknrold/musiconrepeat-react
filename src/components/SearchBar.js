@@ -1,8 +1,9 @@
-import {InputAdornment, TextField} from '@material-ui/core';
+import {Button, InputAdornment, TextField} from '@material-ui/core';
 import Icon from '@material-ui/core/Icon';
 
-const SearchBar = ({handleChange}) => {
+const SearchBar = ({handleChange, handleSubmit}) => {
     return (
+      <div className="search-bar">
         <TextField
         id="search-field"
         placeholder="Look for your favorite music..."
@@ -20,6 +21,8 @@ const SearchBar = ({handleChange}) => {
           ),
         }}
       />
+      <Button variant="contained" fullWidth onClick={handleSubmit}>Play</Button>
+      </div>
     );
 }
  

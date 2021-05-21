@@ -6,10 +6,6 @@ const SkeletonContent = () => {
             <Skeleton animation="wave" variant="rect" height={300}/>
             <Skeleton animation="wave" variant="text" />
             <Skeleton animation="wave" variant="text" />
-            <Skeleton animation="wave" variant="text" />
-            <Skeleton animation="wave" variant="text" />
-            <Skeleton animation="wave" variant="text" />
-            {/* <Skeleton animation="wave" variant="rect" height={100}/> */}
         </div>
     );
 }

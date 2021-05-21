@@ -5,8 +5,11 @@ const Header = () => {
     return (
         <div className="header-player">
             <Typography variant="h4" align="center" gutterBottom >
-                <b>REACT PLAYER</b>
-                <Icon style={{ fontSize: 30 }}>play_circle_filled</Icon>
+                <b>WEARyGASM</b>
+                <Icon style={{ fontSize: 30 }}>headset</Icon>
+            </Typography>
+            <Typography variant="caption" display="block" gutterBottom align="center">
+                <p style={{color:'#808080'}}>Listen until you feel weary having that feeling of eargasm, it's just like how you feel exhausted in ***.</p>
             </Typography>
         </div>
     );
