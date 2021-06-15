@@ -9,7 +9,7 @@ const Header = () => {
                 <Icon style={{ fontSize: 30 }}>headset</Icon>
             </Typography>
             <Typography variant="caption" display="block" gutterBottom align="center">
-                <p style={{color:'#808080'}}>Listen until you feel weary having that feeling of eargasm, it's just like how you feel exhausted in ***.</p>
+                <p style={{color:'#808080'}}>Listen to your favorite youtube music.</p>
             </Typography>
         </div>
     );
