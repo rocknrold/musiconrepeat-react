@@ -6,7 +6,7 @@ const Header = () => {
         <div className="header-player">
             <Typography variant="h4" align="center" gutterBottom >
                 {/*<b>WEARyGASM</b>*/}
-                <b>Music on Repeat</b>
+                <b>Music on Repeat Changed!</b>
                 <Icon style={{ fontSize: 30 }}>headset</Icon>
             </Typography>
             <Typography variant="caption" display="block" gutterBottom align="center">
